@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>n8n Learning Page</title>
   </head>
+
   <body>
     <h1>Welcome to My n8n Learning Page</h1>
     <p>This page is used to test n8n webhooks and automations.</p>
 
-    <form action="https://PLACEHOLDER-WEBHOOK-URL" method="POST">
-      <label>Name:</label><br>
-      <input type="text" name="name"><br><br>
+    <form 
+      action="https://tentaculoid-radiographically-marlen.ngrok-free.dev/webhook-test/lead-form" 
+      method="POST"
+    >
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
 
-      <label>Email:</label><br>
-      <input type="email" name="email"><br><br>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
 
       <button type="submit">Submit</button>
     </form>
+
   </body>
 </html>
+
